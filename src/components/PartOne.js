@@ -11,7 +11,7 @@ const text = "this is dynamic text in component part one"
       <div className='box'>
         {text}
         <br/>
-        {"my name is : "+props.name}
+        {"my name is : "+props.name +"\n and my occupation is :"+props.occupation}
 
       </div>
   </div>

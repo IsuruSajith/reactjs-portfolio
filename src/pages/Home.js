@@ -7,9 +7,9 @@ export default function HOme() {
     <div>
         
         <h1>this is my first page in home</h1>
-        <PartOne name="isuru"/>
-        <PartOne name="sajith"/>
-        <PartOne name="rathnayaka"/>
+        <PartOne name="isuru" occupation="software engineer"/>
+        <PartOne name="sajith" occupation="senior software engineer"/>
+        <PartOne name="rathnayaka" occupation="lead software engineer"/>
         <PartTwo/>
 
         </div>
