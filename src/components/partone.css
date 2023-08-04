@@ -1,0 +1,17 @@
+.box{
+    background-color: aqua;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+}
+.part-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
