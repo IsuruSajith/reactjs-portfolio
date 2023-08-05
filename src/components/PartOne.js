@@ -12,7 +12,7 @@ export default function PartOne(props) {
                 <br/>
                 {"my name is : " + props.name + "\n and my occupation is :" + props.occupation}
                 <br/>
-                {"this is my children props: " + props.children}
+                {props.children}
             </div>
         </div>)
 }
