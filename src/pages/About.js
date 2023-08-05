@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Bootstraptest from '../components/Bootstraptest'
 
 
 export default function About() {
@@ -8,6 +9,9 @@ export default function About() {
 
         <br />
         <Link to='/Home'>Home</Link>
+
+        <hr />
+        <Bootstraptest/>
     </div>
 
   )
