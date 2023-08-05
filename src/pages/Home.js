@@ -3,6 +3,7 @@ import PartOne from '../components/PartOne'
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
 import './home.css'
+import ToastTest from "../components/ToastTest";
 
 
 export default function Home() {
@@ -17,25 +18,26 @@ export default function Home() {
         setCount(count - 1);
     }
 
-    return (
-        <div>
+    return (<div>
 
-            <h1>this is my first page in home</h1>
-            <PartOne name='Isuru'>
+        <h1>this is my first page in home</h1>
+        <PartOne name='Isuru'>
 
-            </PartOne>
+        </PartOne>
 
-            <Link to='/About'>About</Link>
-            <br/>
-            <Link to='/Contact'>Contact us</Link>
+        <Link to='/About'>About</Link>
+        <br/>
+        <Link to='/Contact'>Contact us</Link>
 
-            <hr/>
-            <h3>My counter</h3>
-            <h5>My count is: {count}</h5>
-            <button className='button' onClick={decrease}>-</button>
-            <button className='button' onClick={increase}>+</button>
+        <hr/>
+        <h3>My counter</h3>
+        <h5>My count is: {count}</h5>
+        <button className='button' onClick={decrease}>-</button>
+        <button className='button' onClick={increase}>+</button>
+
+        <hr/>
+        <ToastTest/>
 
 
-
-        </div>)
+    </div>)
 }
