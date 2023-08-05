@@ -2,6 +2,7 @@ import React from 'react'
 import PartOne from '../components/PartOne'
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
+import './home.css'
 
 
 export default function Home() {
@@ -31,8 +32,8 @@ export default function Home() {
       <hr />
       <h3>My counter</h3>
       <h5>My count is:  {count}</h5>
-      <button onClick={decrease}>-</button>
-      <button onClick={increase}>+</button>
+      <button className='button' onClick={decrease}>-</button>
+      <button className='button' onClick={increase}>+</button>
 
         </div>
   )
