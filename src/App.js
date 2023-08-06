@@ -10,6 +10,8 @@ import Education from "./pages/Education";
 import './css/styles.css'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
     return (
@@ -17,8 +19,6 @@ function App() {
             <div>
                 <Header/>
                 <Routes>
-
-
                     <Route exact path='/home' element={<Home/>}/>
                     <Route exact path='/' element={<Home/>}/>
                     <Route exact path='/experience' element={<Experience/>}/>
@@ -29,6 +29,7 @@ function App() {
                     <Route path='/resume' element={<Resume/>}/>
                     <Route path='/contact' element={<Resume/>}/>
                 </Routes>
+                <ToastContainer/>
                 <Footer/>
             </div>
 

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {toast} from "react-toastify";
 
 export default function Header() {
   const handleDownloadResume = () => {
@@ -12,6 +13,11 @@ export default function Header() {
     link.target = '_blank';
     link.download = 'Isuru_Sajith_Rathnayaka.pdf';
     link.click();
+
+    toast.success('Resume downloaded successfully!',{
+      position:'bottom-right',
+      autoClose:3000
+    });
   };
 
   return (
