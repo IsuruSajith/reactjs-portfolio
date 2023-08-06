@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import {useState} from 'react'
 import './home.css'
 import ToastTest from "../components/ToastTest";
+import FuncTest from "../components/FuncTest";
 
 
 export default function Home() {
@@ -37,6 +38,8 @@ export default function Home() {
 
         <hr/>
         <ToastTest/>
+        <hr/>
+        <FuncTest/>
 
 
     </div>)
