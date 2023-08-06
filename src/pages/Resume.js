@@ -3,6 +3,6 @@ import Header from "../components/Header";
 
 export default function Resume() {
   return (
-    <div>R  <Header/></div>
+    <div> <Header/></div>
   )
 }
