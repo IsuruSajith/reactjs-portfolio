@@ -7,12 +7,17 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import TechStack from "./pages/TechStack";
 import Education from "./pages/Education";
-
+import './css/styles.css'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
-    return (<Router>
+    return (
+        <Router>
             <div>
+                <Header/>
                 <Routes>
+
 
                     <Route exact path='/home' element={<Home/>}/>
                     <Route exact path='/' element={<Home/>}/>
@@ -24,9 +29,12 @@ function App() {
                     <Route path='/resume' element={<Resume/>}/>
                     <Route path='/contact' element={<Resume/>}/>
                 </Routes>
+                <Footer/>
             </div>
 
+
         </Router>
+
 
     );
 }

@@ -1,0 +1,7 @@
+.intro h2{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+.intro{
+    flex-direction: column;
+}

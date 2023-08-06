@@ -20,15 +20,13 @@ export default function Header() {
             <Nav.Link href="/techstack">Tech Stack</Nav.Link>
             <Nav.Link href="/resume">Resume</Nav.Link>
             <Nav.Link href="/resume">Contact</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown title="Dev Toolbox" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Emoji Mood Selector</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Quote of the Day</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">BMI Calculator</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Theme Switcher
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

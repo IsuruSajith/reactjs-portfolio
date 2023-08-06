@@ -1,13 +1,17 @@
 import React from 'react'
-import Header from '../components/Header'
+
 import MyPic from "../components/MyPic";
+import IntroductionMe from "../components/IntroductionMe";
 
 
 export default function Home() {
     return (<div>
-            <Header/>
+
         <div>
             <MyPic/>
         </div>
-        </div>)
+        <div>
+            <IntroductionMe/>
+        </div>
+    </div>)
 }
