@@ -13,7 +13,9 @@ function App() {
     return (<Router>
             <div>
                 <Routes>
+
                     <Route exact path='/home' element={<Home/>}/>
+                    <Route exact path='/' element={<Home/>}/>
                     <Route exact path='/experience' element={<Experience/>}/>
                     <Route exact path='/education' element={<Education/>}/>
                     <Route path='/contact' element={<ContactMe/>}/>
