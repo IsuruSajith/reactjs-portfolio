@@ -30,7 +30,10 @@ function App() {
                     <Route path='/contact' element={<Resume/>}/>
                 </Routes>
                 <ToastContainer/>
-                <Footer/>
+                <div className='footer'>
+                    <Footer/>
+                </div>
+
             </div>
 
 
