@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const PopupForm = ({ onClose, onSubmit }) => {
     const [formData, setFormData] = useState({
-        // Initialize your form fields here
+        //
         name: '',
         email: '',
         message: '',
@@ -15,7 +15,7 @@ const PopupForm = ({ onClose, onSubmit }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Perform any validation here if needed
+        //
         onSubmit(formData);
     };
 
