@@ -1,11 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {toast} from "react-toastify";
-import { useState } from 'react';
-import PopupForm from './PopupForm';
+import openSubmitForumPopup from "./SubmitForum";
 
 export default function Header() {
     const handleDownloadResume = () => {
@@ -19,22 +18,6 @@ export default function Header() {
         toast.success('Resume downloaded successfully!', {
             position: 'bottom-right', autoClose: 3000
         });
-    };
-
-    const [showModal, setShowModal] = useState(false);
-
-    const openModal = () => {
-        setShowModal(true);
-    };
-
-    const closeModal = () => {
-        setShowModal(false);
-    };
-
-    const handleFormSubmit = (formData) => {
-        // for back end
-        console.log(formData);
-        closeModal();
     };
 
 
@@ -57,9 +40,8 @@ export default function Header() {
                             <NavDropdown.Item href="#action/3.1">Emoji Mood Selector</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Quote of the Day</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">BMI Calculator</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2" onClick={openModal}>Submit your
+                            <NavDropdown.Item href="#action/3.2" onClick={openSubmitForumPopup}>Submit your
                                 data</NavDropdown.Item>
-                            {showModal && <PopupForm onClose={closeModal} onSubmit={handleFormSubmit} />}
                             <NavDropdown.Divider/>
                             <NavDropdown.Item href="#action/3.4">
                                 Theme Switcher
