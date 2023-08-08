@@ -1,9 +1,11 @@
 import React from 'react'
-import Header from "../components/Header";
+import FormExample from "../components/FormExample";
+
 
 export default function ContactMe() {
   return (
     <div>
+    <FormExample/>
     </div>
   )
 }

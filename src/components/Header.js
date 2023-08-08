@@ -5,6 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {toast} from "react-toastify";
 import openSubmitForumPopup from "./SubmitForum";
+import ContactMe from "../pages/ContactMe";
+import { Link } from 'react-router-dom';
+
+
 
 export default function Header() {
     const handleDownloadResume = () => {
@@ -35,7 +39,7 @@ export default function Header() {
                         <Nav.Link href="/education">Education</Nav.Link>
                         <Nav.Link href="/techstack">Tech Stack</Nav.Link>
                         <Nav.Link href="/resume" onClick={handleDownloadResume}>Resume</Nav.Link>
-                        <Nav.Link href="/resume">Contact</Nav.Link>
+                        <Nav.Link href="/contactme" >Contact</Nav.Link>
                         <NavDropdown title="Dev Toolbox" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Emoji Mood Selector</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Quote of the Day</NavDropdown.Item>
