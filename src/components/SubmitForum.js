@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import BootstrapForm from "./BootstrapForm";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const openSubmitForumPopup = () => {
 
