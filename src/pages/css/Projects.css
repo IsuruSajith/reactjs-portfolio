@@ -3,5 +3,9 @@ font-size: 12px;
 }
 .image{
     /*width: 100px;*/
-    height: 150px;
+    /*height: 150px;*/
+}
+.card-container{
+    width: 150px;
+    max-height: 20px;
 }
