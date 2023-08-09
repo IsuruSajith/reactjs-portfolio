@@ -34,7 +34,6 @@ function App() {
                 <ToastContainer/>
                 <div className='footer'>
                     <Footer/>
-                    <div className='underline'>tailwind test</div>
                 </div>
 
             </div>
