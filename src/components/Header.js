@@ -43,7 +43,7 @@ export default function Header() {
                         <NavDropdown title="Dev Toolbox" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Emoji Mood Selector</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Quote of the Day</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">BMI Calculator</NavDropdown.Item>
+                            <NavDropdown.Item href="/bmi">BMI Calculator</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2" onClick={openSubmitForumPopup}>Submit your
                                 data</NavDropdown.Item>
                             <NavDropdown.Divider/>

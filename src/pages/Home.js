@@ -1,5 +1,4 @@
 import React from 'react'
-
 import MyPic from "../components/MyPic";
 import IntroductionMe from "../components/IntroductionMe";
 

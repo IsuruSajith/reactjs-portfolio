@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 import FormExample from "./components/FormExample";
+import Bmi from "./pages/Bmi"
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                     <Route path='/projects' element={<Projects/>}/>
                     <Route path='/techstack' element={<TechStack/>}/>
                     <Route path='/resume' element={<Resume/>}/>
+                    <Route path='/bmi' element={<Bmi/>}/>
                 </Routes>
                 <ToastContainer/>
                 <div className='footer'>

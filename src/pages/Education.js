@@ -15,7 +15,7 @@ export default function Education() {
                     <p>IJSE, Institute of Software Engineering, Panadura</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={500}>
+            <Carousel.Item interval={1000}>
                 <ExampleCarouselImage text="Master Java Development"/>
                 <Carousel.Caption>
                     <h3>Certificate in Master Java Development</h3>

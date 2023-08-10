@@ -1,0 +1,12 @@
+.bmi-container{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 56px);
+    z-index: 10;
+    background-image: url('/public/images/bmi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+}
