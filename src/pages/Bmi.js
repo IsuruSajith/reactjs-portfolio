@@ -13,12 +13,29 @@ export default function Bmi() {
     const [height, setHeight] = useState("");
     const [weight, setWeight] = useState("");
     const [bmi, setBMI] = useState("");
+    const [validationError, setValidationError] = useState("");
+
+    const validateInput = () => {
+        if (!height || !weight) {
+            setValidationError("Please enter both height and weight.");
+            return false;
+        }
+        if (isNaN(height) || isNaN(weight)) {
+            setValidationError("Please enter valid numeric values for height and weight.");
+            return false;
+        }
+        setValidationError("");
+        return true;
+    };
 
     const calculateBMI = () => {
-        if (height && weight) {
+        if (validateInput()) {
             const heightInMeters = height / 100;
             const bmiValue = weight / (heightInMeters * heightInMeters);
             setBMI(bmiValue.toFixed(2));
+        } else {
+            // Reset BMI when validation fails
+            setBMI("");
         }
     };
     const renderTooltip = (props) => (<Tooltip id="button-tooltip" {...props}>
@@ -56,6 +73,7 @@ export default function Bmi() {
 
                                 />
                             </FloatingLabel>
+                            {validationError && <p className="text-danger">{validationError}</p>}
                         </>
 
                         <br/>
