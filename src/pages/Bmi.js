@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Header from "../components/Header";
 import './css/Bmi.css'
 import Tab from 'react-bootstrap/Tab';
@@ -34,13 +34,12 @@ export default function Bmi() {
             const bmiValue = weight / (heightInMeters * heightInMeters);
             setBMI(bmiValue.toFixed(2));
         } else {
-            // Reset BMI when validation fails
             setBMI("");
         }
     };
     const renderTooltip = (props) => (<Tooltip id="button-tooltip" {...props}>
-            Compute BMI
-        </Tooltip>);
+        Compute BMI
+    </Tooltip>);
 
     return (<div className='bmi-container'>
         <div className='calculator d-flex flex-column justify-content-center align-items-center'>
@@ -69,32 +68,50 @@ export default function Bmi() {
                                 <Form.Control type="text"
                                               placeholder="kg"
                                               value={weight}
-                                              onChange={(e)=>setWeight(e.target.value)}
+                                              onChange={(e) => setWeight(e.target.value)}
 
                                 />
                             </FloatingLabel>
                             {validationError && <p className="text-danger">{validationError}</p>}
                         </>
-
                         <br/>
-
                         <OverlayTrigger
                             placement="right"
                             delay={{show: 250, hide: 400}}
                             overlay={renderTooltip}
                         >
-
                             <Button variant="success" className='button' onClick={calculateBMI}>BMI</Button>
                         </OverlayTrigger>
 
                         <hr/>
                         {bmi && <h5>Your BMI: {bmi}</h5>}
                     </Tab>
-
-
                 </Tabs>
             </div>
-        </div>
+            <hr/>
+            <div>
+                <h5 className='text-white'>React js code without validations and css</h5>
+                <div className='text-white'>
+                <pre>
+                {`
+                    import React, {useState} from 'react'; <br/>
+                    export default function Bmi() {
+                        const [height, setHeight] = useState("");
+                        const [weight, setWeight] = useState("");
+                        const [bmi, setBMI] = useState("");
+                        const calculateBMI = () => {if (validateInput()) {const heightInMeters = height / 100;
+                        const bmiValue = weight / (heightInMeters * heightInMeters);
+                        setBMI(bmiValue.toFixed(2));} else {setBMI("");}'
+                    return (
+                        <div className='bmi-container'>
+                            <Button variant="success" className='button' onClick={calculateBMI}>BMI</Button>
+                        </div>
+                    }
+`}
+                    </pre>
+                </div>
 
+            </div>
+        </div>
     </div>)
 }
