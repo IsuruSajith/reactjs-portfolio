@@ -88,13 +88,8 @@ export default function Bmi() {
                     </Tab>
                 </Tabs>
             </div>
-            <hr/>
-            <div>
-                <h5 className='text-white'>React js code without validations and css</h5>
-                <div className='text-white'>
-                <pre>
-                {`
-                    import React, {useState} from 'react'; <br/>
+                <pre className='border border-gray-300 rounded-lg p-0 text-white text-sm m-1'>{`  
+                    import React, {useState} from 'react';
                     export default function Bmi() {
                         const [height, setHeight] = useState("");
                         const [weight, setWeight] = useState("");
@@ -109,9 +104,6 @@ export default function Bmi() {
                     }
 `}
                     </pre>
-                </div>
-
-            </div>
         </div>
     </div>)
 }
