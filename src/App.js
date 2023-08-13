@@ -31,6 +31,8 @@ function App() {
                     <Route path='/techstack' element={<TechStack/>}/>
                     <Route path='/resume' element={<Resume/>}/>
                     <Route path='/bmi' element={<Bmi/>}/>
+                    <Route path='/techstack/pl' element={<TechStack/>}/>
+                    <Route path='/techstack/fl' element={<TechStack/>}/>
                 </Routes>
                 <ToastContainer/>
                 <div className='footer'>

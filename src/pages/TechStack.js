@@ -11,26 +11,26 @@ export default function TechStack() {
       </div>
       <Nav variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
-          <Nav.Link href="/home">Programming Languages</Nav.Link>
+          <Nav.Link href="#" eventKey="link-0">Programming Languages</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-1">Frameworks and Libraries</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="#" >DBMS</Nav.Link>
+          <Nav.Link eventKey="link-2" >DBMS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="#" >VCS</Nav.Link>
+          <Nav.Link eventKey="link-3" >VCS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="#" >IDE</Nav.Link>
+          <Nav.Link eventKey="link-4" >IDE</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="#" >API Platforms, Servers, Cloud
+          <Nav.Link eventKey="link-5" >API Platforms, Servers, Cloud
             Computing</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="#" >Operating Systems</Nav.Link>
+          <Nav.Link eventKey="link-6" >Operating Systems</Nav.Link>
         </Nav.Item>
       </Nav>
     </div>
