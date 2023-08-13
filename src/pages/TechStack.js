@@ -11,19 +11,21 @@ export default function TechStack() {
     const renderSectionContent = () => {
         switch (selectedSection) {
             case 'programming-languages':
-                return (
-            <>
-                <hr/>
-<pre className='text-red-700'>
-    {`Java | ECMAScript(JS) | TypeScript | SQL`}
-</pre>
-            </>
-                );
+                return (<div className='w-75 text-red-700 p-3'>
+                    Java | ECMAScript(JS) | TypeScript | SQL
+
+                </div>);
             case 'frameworks-and-libraries':
-                return (
-                    <pre className='text-red-700'>
-    Java SE | Jakarta EE | JavaFX | Spring | Spring Boot | Angular | React | React Native | Spring Data JPA | Spring Web | JPA (Java Persistence API) | Spring Security | Gson / Jackson | Multer | Swagger UI | SLF4J / Logback | H2 | HyperSQL | Mockito | JUnit | Promise-mysql | Express | JSON | Java Bean Validation | Lombok | Animate.css | CSS3 | HTML5 | Tailwind CSS | Angular Material | Bootstrap | Material-UI | SAAS | NPM | Hibernate | JQuery | NodeJS | Parcel JS | Webpack | Gradle | Maven
-</pre>
+                return (<div className='w-75 text-red-700 p-3 leading-loose'>
+
+                        Java SE | Jakarta EE | JavaFX | Spring | Spring Boot | Angular | React | React Native | Spring
+                        Data JPA | Spring Web | JPA (Java Persistence API) | Spring Security |
+
+                        Gson / Jackson | Multer | Swagger UI | SLF4J / Logback | H2 |
+                        HyperSQL | Mockito | JUnit | Promise-mysql | Express | JSON | Java Bean Validation |
+                        Lombok | Animate.css | CSS3 | HTML5 | Tailwind CSS | Angular Material | Bootstrap | Material-UI
+                        | SAAS | NPM | Hibernate | JQuery | NodeJS | Parcel JS | Webpack | Gradle | Maven
+                    </div>
 
                 );
             default:
