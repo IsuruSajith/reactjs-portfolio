@@ -26,8 +26,30 @@ export default function TechStack() {
                         Lombok | Animate.css | CSS3 | HTML5 | Tailwind CSS | Angular Material | Bootstrap | Material-UI
                         | SAAS | NPM | Hibernate | JQuery | NodeJS | Parcel JS | Webpack | Gradle | Maven
                     </div>
-
                 );
+            case 'dbms':
+                return (<div className='w-75 text-red-700 p-3'>
+                    MySQL | MongoDB
+                </div>);
+
+            case 'vcs':
+                return (<div className='w-75 text-red-700 p-3'>
+                    Git | Git Hub | Git Lab | Bitbucket
+                </div>);
+
+            case 'ide':
+                return (<div className='w-75 text-red-700 p-3'>
+                    IntelliJ idea | VSCode | DataGrip | Jasper | Packet-Tracer
+                </div>);
+            case 'cloud-services':
+                return (<div className='w-75 text-red-700 p-3'>
+                    Postman | GCP | Apache | Tomcat | GlassFish | Jetty | Docker | Kubernetes
+                </div>);
+            case 'os':
+                return (<div className='w-75 text-red-700 p-3'>
+                    Ubuntu | Windows
+                </div>);
+
             default:
                 return null;
         }
@@ -58,20 +80,45 @@ export default function TechStack() {
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-2">DBMS</Nav.Link>
+                    <Nav.Link
+                        onClick={() => handleSectionChange('dbms')}
+                        eventKey="dbms"
+                    >
+                        DBMS
+                    </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-3">VCS</Nav.Link>
+                    <Nav.Link
+                        onClick={() => handleSectionChange('vcs')}
+                        eventKey="vcs"
+                    >
+                        VCS
+                    </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-4">IDE</Nav.Link>
+                    <Nav.Link
+                        onClick={() => handleSectionChange('ide')}
+                        eventKey="ide"
+                    >
+                        IDE
+                    </Nav.Link>
+
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-5">API Platforms, Servers, Cloud
-                        Computing</Nav.Link>
+                    <Nav.Link
+                        onClick={() => handleSectionChange('cloud-services')}
+                        eventKey="cloud-services"
+                    >
+                        API Platforms, Servers, Cloud Computing
+                    </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-6">Operating Systems</Nav.Link>
+                    <Nav.Link
+                        onClick={() => handleSectionChange('os')}
+                        eventKey="os"
+                    >
+                        Operating Systems
+                    </Nav.Link>
                 </Nav.Item>
             </Nav>
             {renderSectionContent()}
