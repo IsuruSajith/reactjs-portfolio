@@ -11,57 +11,21 @@ export default function TechStack() {
     const renderSectionContent = () => {
         switch (selectedSection) {
             case 'programming-languages':
-                return (<ul className='list-disc pl-5'>
-                        <li>Java</li>
-                        <li>ECMAScript(JS)</li>
-                        <li>TypeScript</li>
-                        <li>SQL</li>
-
-                    </ul>);
+                return (
+            <>
+                <hr/>
+<pre className='text-red-700'>
+    {`Java | ECMAScript(JS) | TypeScript | SQL`}
+</pre>
+            </>
+                );
             case 'frameworks-and-libraries':
-                return (<ul className='list-disc pl-5'>
-                        <li>Java SE</li>
-                        <li>Jakarta EE</li>
-                        <li>JavaFX</li>
-                        <li>Spring</li>
-                        <li>Spring Boot</li>
-                        <li>Angular</li>
-                        <li>React</li>
-                        <li>React Native</li>
-                        <li>Spring Data JPA</li>
-                        <li>Spring Web</li>
-                        <li>JPA (Java Persistence API)</li>
-                        <li>Spring Security</li>
-                        <li>Gson / Jackson</li>
-                        <li>Multer</li>
-                        <li>Swagger UI</li>
-                        <li>SLF4J / Logback</li>
-                        <li>H2</li>
-                        <li>HyperSQL</li>
-                        <li>Mockito</li>
-                        <li>JUnit</li>
-                        <li>Promise-mysql</li>
-                        <li>Express</li>
-                        <li>JSON</li>
-                        <li>Java Bean Validation</li>
-                        <li>Lombok</li>
-                        <li>Animate.css</li>
-                        <li>CSS3</li>
-                        <li>HTML5</li>
-                        <li>Tailwind CSS</li>
-                        <li>Angular Material</li>
-                        <li>Bootstrap</li>
-                        <li>Material-UI</li>
-                        <li>SAAS</li>
-                        <li>NPM</li>
-                        <li>Hibernate</li>
-                        <li>JQuery</li>
-                        <li>NodeJS</li>
-                        <li>Parcel JS</li>
-                        <li>Webpack</li>
-                        <li>Gradle</li>
-                        <li>Maven</li>
-                    </ul>);
+                return (
+                    <pre className='text-red-700'>
+    Java SE | Jakarta EE | JavaFX | Spring | Spring Boot | Angular | React | React Native | Spring Data JPA | Spring Web | JPA (Java Persistence API) | Spring Security | Gson / Jackson | Multer | Swagger UI | SLF4J / Logback | H2 | HyperSQL | Mockito | JUnit | Promise-mysql | Express | JSON | Java Bean Validation | Lombok | Animate.css | CSS3 | HTML5 | Tailwind CSS | Angular Material | Bootstrap | Material-UI | SAAS | NPM | Hibernate | JQuery | NodeJS | Parcel JS | Webpack | Gradle | Maven
+</pre>
+
+                );
             default:
                 return null;
         }
